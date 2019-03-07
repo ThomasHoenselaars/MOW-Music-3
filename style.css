@@ -33,7 +33,7 @@ img {
 
 #menu {
     display: flex;
-    
+    align-items: center;
     flex-flow: row wrap;
     list-style: none;
     padding: 0;
@@ -42,14 +42,21 @@ img {
     z-index:999;
 }
 
+#menu li.active {
+    background: rgba(139, 139, 139, 0.6);
+}
+#menu li.active:hover {
+    background: rgba(139, 139, 139, 0.9);
+}
 #menu li {
     padding: 1rem;
     background: rgba(255,255,255, 0.6);
     margin: 0 1rem;
     flex: 1;
     text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.8);
-    border-radius: .2rem;
+    box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);    
+    border-radius: 6px;
+
     
 }
 
@@ -107,6 +114,41 @@ img {
     background: url('images/Studio\ MOW-0413.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    text-align: center;
+}
+
+.section.contact {
+    background: rgba(89, 125, 136, 0.8);
+}
+
+.section-content {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: white;
+    max-width: 30rem;
+    padding: 2rem;
+    box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
+}
+
+.booknow:hover {
+    box-shadow: 2px 20px 45px -15px rgba(0,0,0,0.6); 
+}
+
+.booknow {
+    font-size: 200%;
+    padding: 2rem 5rem;
+    border: 2px solid white;
+    border-radius: 6px;
+    background: rgba(139, 139, 139, 0.6);
+    color: white;
+    font-weight: 100;
+    box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
+    cursor: pointer;
 }
 
 /* .section.contact {
