@@ -19,6 +19,12 @@ img {
     height: auto;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .navbar {
     position: fixed;
     top: 0;
@@ -69,6 +75,40 @@ img {
 #menu li a {
     display: block;
 }
+
+/* MOBILE MENU */
+.mobile-navbar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    z-index: 70;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+    background: rgba(255,255,255, 0.6);
+}
+
+.mobile-hamburger {
+    padding: 1rem;
+}
+
+#mobile-menu {
+    display: none;
+    padding: 2rem 0;
+}
+
+#mobile-menu li {
+    padding: 1rem;
+}
+
+#mobile-menu.menu-active {
+    display: initial;
+}
+/* END OF MOBILE MENU */
+
+
 
 .title {
     color: white;
@@ -175,6 +215,13 @@ img {
     cursor: pointer;
 }
 
-/* .section.contact {
-    background-color:
-} */
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        display: none;
+    }
+    .mobile-navbar {
+        display: initial;
+    }
+}
