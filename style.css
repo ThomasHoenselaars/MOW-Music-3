@@ -136,6 +136,7 @@ ul {
     position: relative;
 }
 
+
 .bounce {
     animation: bounce 2s infinite;
 }
@@ -379,7 +380,9 @@ iframe {
 }
 
 @media screen and (max-width: 450px) {
-    
+    .arrow {
+        margin-bottom: 10rem;
+    }
     .card {
         margin: 5rem 0;
         width: 100vw;
