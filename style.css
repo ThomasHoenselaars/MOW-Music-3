@@ -168,6 +168,7 @@ ul {
 .section.about {
     background: url('images/Studio\ MOW-0560-min.jpg');
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -175,12 +176,14 @@ ul {
     background: url('images/Studio\ MOW-0425-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .section.booking {
     background: url('images/Studio\ MOW-0413-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 
@@ -225,8 +228,9 @@ iframe {
 
 
 .spotify-btn {
+    display: block;
     font-size: 14px;
-    line-height: 1;
+    line-height: 1.2;
     border-radius: 500px;
     padding: 18px 48px 16px;
     border-width: 0;
@@ -319,5 +323,14 @@ iframe {
     }
     .booknow {
         padding: 1rem;
+    }
+    .card {
+        margin: 5rem 0;
+    }
+    /* .section-content {
+        margin-top: 3rem;
+    } */
+    .fp-table {
+        min-height: 100vh !important;
     }
 }

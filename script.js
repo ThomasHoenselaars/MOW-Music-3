@@ -9,7 +9,6 @@ const fullPage = new fullpage('#fullpage', {
     navigationTooltips: ['Home', 'About', 'Music', 'Book A Studio', 'Contact'],
     controlArrows: true,
     responsiveWidth: 900,
-    scrollOverflow:true
     
 });
 
@@ -29,6 +28,8 @@ mobileMenu.addEventListener('click', (e) => {
 });
 
 // DOWN ARROW
+
+
 
 
 
