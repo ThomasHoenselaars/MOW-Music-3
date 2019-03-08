@@ -111,12 +111,20 @@ ul {
 }
 
 #mobile-menu li {
-    padding: 1.2rem;
     color: white;
-    background: #222326;
+    background: rgb(34,35,38, 1);
     border-top: 1px solid #616467;
 }
 
+#mobile-menu a {
+    display: block;
+    padding: 1.2rem;
+
+}
+
+#mobile-menu li:hover {
+    background: rgb(34,35,38, .5);
+}
 
 
 
@@ -178,6 +186,15 @@ ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.section.about .section-content, .section.about h1 {
+    align-items: start;
+    text-align: left;
+}
+
+.about-mobile {
+    display: none;
 }
 
 .section.music {
@@ -381,7 +398,9 @@ iframe {
     }
     .section-content {
         margin-top: 3rem;
+        margin-bottom: 3rem;
     }
+ 
     /* .fp-table {
         min-height: 100vh !important;
     } */
@@ -391,9 +410,16 @@ iframe {
     .arrow {
         margin-bottom: 10rem;
     }
+    .about-mobile {
+        display: initial;
+    }
     .card {
         margin: 5rem 0;
         width: 100vw;
+    }
+    .section-content {
+        margin-top: 3rem;
+        margin-bottom: 0rem;
     }
     .section.about {
         background: rgba(89, 125, 136, 0.8);        
@@ -405,6 +431,11 @@ iframe {
     
     .section.booking {
         background: rgba(89, 125, 136, 0.8);       
+    }
+
+    .section.contact {
+        background: rgba(89, 125, 136, 0.8);  
+        
     }
 
 }
