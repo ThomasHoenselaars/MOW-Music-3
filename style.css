@@ -120,7 +120,7 @@ ul {
 }
 
 .section.hero {
-    background: url('images/Studio\ MOW-0386.jpg');
+    background: url('images/Studio\ MOW-0386-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -144,7 +144,7 @@ ul {
     }
 }
 
-.section:after {
+.section:nth-child(n+2):after {
     content: " ";
     z-index: 1;
     display: block;
@@ -153,25 +153,24 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.15);
-  }
+    background: rgba(206, 206, 206, 0.5);  }
 
 
 
 .section.about {
-    background: url('images/Studio\ MOW-0560.jpg');
+    background: url('images/Studio\ MOW-0560-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section.music {
-    background: url('images/Studio\ MOW-0425.jpg');
+    background: url('images/Studio\ MOW-0425-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section.booking {
-    background: url('images/Studio\ MOW-0413.jpg');
+    background: url('images/Studio\ MOW-0413-min.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -193,8 +192,29 @@ ul {
     position: relative;
     z-index: 5;
     grid-column: 2;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
 }
 /* EINDE SECTION CONTENT LAYOUT */
+
+.spotify-btn {
+    font-size: 14px;
+    line-height: 1;
+    border-radius: 500px;
+    padding: 18px 48px 16px;
+    border-width: 0;
+    letter-spacing: 2px;
+    min-width: 160px;
+    text-transform: uppercase;
+    white-space: normal;
+    color: #fff;
+    background-color: #1db954;
+}
+
+
+
 .card {
     background-color: white;
     max-width: 25rem;
@@ -205,12 +225,16 @@ ul {
     justify-items: center !important;
 }
 
+.card p {
+    padding: .5rem 0 1rem 0;
+}
+
 .booknow:hover {
     box-shadow: 2px 20px 45px -15px rgba(0,0,0,0.6); 
 }
 
 .booknow {
-    font-size: 200%;
+    font-size: 150%;
     padding: 1rem 5rem;
     border: 2px solid white;
     border-radius: 6px;
@@ -221,6 +245,43 @@ ul {
     cursor: pointer;
 }
 
+.socialmedia-nav {
+    display: flex;
+    justify-content: center;
+}
+
+.socialmedia-nav li {
+    margin: 1rem;
+}
+
+.socialmedia-nav .twitter {
+    background: url(https://www.pathe.nl/assets/img/icons/social/twitter@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .fb {
+    background: url(https://www.pathe.nl/assets/img/icons/social/facebook@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.socialmedia-nav .insta {
+    background: url(https://www.pathe.nl/assets/img/icons/social/instagram@2x.png);
+    background-size: cover;
+    display: block;
+    height: 30px;
+    width: 30px;
+}
+
+.copyright {
+    font-size: 10px;
+    margin-bottom: 1rem;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -229,5 +290,8 @@ ul {
     }
     .mobile-navbar {
         display: initial;
+    }
+    .booknow {
+        padding: 1rem;
     }
 }
