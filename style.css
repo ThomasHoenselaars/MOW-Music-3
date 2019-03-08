@@ -324,7 +324,7 @@ iframe {
     height: 100%;
     display: none;
    
-    overflow: none;
+    overflow: auto;
 }
 
 .modal-content {
@@ -373,7 +373,27 @@ iframe {
     .section-content {
         margin-top: 3rem;
     }
-    .fp-table {
+    /* .fp-table {
         min-height: 100vh !important;
+    } */
+}
+
+@media screen and (max-width: 450px) {
+    
+    .card {
+        margin: 5rem 0;
+        width: 100vw;
     }
+    .section.about {
+        background: rgba(89, 125, 136, 0.8);        
+    }
+    
+    .section.music {
+        background: rgba(89, 125, 136, 0.8);        
+    }
+    
+    .section.booking {
+        background: rgba(89, 125, 136, 0.8);       
+    }
+
 }
