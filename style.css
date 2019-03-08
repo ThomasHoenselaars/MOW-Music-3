@@ -408,7 +408,7 @@ iframe {
 
 @media screen and (max-width: 450px) {
     .arrow {
-        margin-bottom: 10rem;
+        margin-top: -6.5rem;
     }
     .about-mobile {
         display: initial;
