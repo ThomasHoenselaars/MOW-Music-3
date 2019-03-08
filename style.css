@@ -46,6 +46,7 @@ ul {
     margin: 0;
     position: relative;
     z-index:999;
+    
 }
 
 #menu li.active {
@@ -87,13 +88,14 @@ ul {
     
     z-index: 70;
     width: 100%;
-    padding: 1rem;
     margin: 0;
-    background: rgba(255,255,255, 0.6);
+    background: #222326
 }
 
 .mobile-hamburger {
     padding: 1rem;
+    cursor: pointer;
+    display: inline-block;
 }
 
 #mobile-menu {
@@ -102,7 +104,8 @@ ul {
 }
 
 #mobile-menu li {
-    padding: 1rem;
+    padding: 1.2rem;
+    color: white;
 }
 
 #mobile-menu.menu-active {

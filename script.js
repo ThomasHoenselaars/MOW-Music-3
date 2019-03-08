@@ -11,3 +11,23 @@ const fullPage = new fullpage('#fullpage', {
     responsiveWidth: 900
     
 });
+
+// MOBILE MENU
+
+const mobileHamburger = document.querySelector('.mobile-hamburger');
+const mobileMenu = document.getElementById('mobile-menu');
+
+mobileHamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('menu-active');
+});
+
+mobileMenu.addEventListener('click', (e) => {
+    if(e.target.nodeName === 'A') {
+    mobileMenu.classList.remove('menu-active');
+    }
+});
+
+// DOWN ARROW
+
+
+
