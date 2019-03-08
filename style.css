@@ -106,7 +106,12 @@ ul {
 #mobile-menu li {
     padding: 1.2rem;
     color: white;
+    background: #222326;
+    border-top: 1px solid #616467;
 }
+
+
+
 
 #mobile-menu.menu-active {
     display: initial;
@@ -161,19 +166,19 @@ ul {
 
 
 .section.about {
-    background: url('images/Studio\ MOW-0560-min.jpg');
+    /* background: url('images/Studio\ MOW-0560-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section.music {
-    background: url('images/Studio\ MOW-0425-min.jpg');
+    /* background: url('images/Studio\ MOW-0425-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .section.booking {
-    background: url('images/Studio\ MOW-0413-min.jpg');
+    /* background: url('images/Studio\ MOW-0413-min.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
