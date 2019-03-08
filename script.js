@@ -29,30 +29,35 @@ mobileMenu.addEventListener('click', (e) => {
 
 // POPUP
 
+// const bookNow = document.querySelector('.booknow');
+// const popupScreen = document.querySelector('.popup');
+// const closePopup = document.querySelector('.closebutton')
+
+
+// const openModal = () => {
+//     popupScreen.style.display = 'block';
+// };
+
+// const closeModal = () => {
+//     popupScreen.style.display = 'none';
+// };
+
+// // Close if outside click
+// const clickOutside = (e) => {
+//     if(e.target === popupScreen) {
+//     popupScreen.style.display = 'none';
+//     }
+// };
+
+// bookNow.addEventListener('click', openModal);
+// closePopup.addEventListener('click', closeModal);
+// // Listen outsideclick
+// window.addEventListener('click', clickOutside);
+
 const bookNow = document.querySelector('.booknow');
-const popupScreen = document.querySelector('.popup');
-const closePopup = document.querySelector('.closebutton')
-
-
-const openModal = () => {
-    popupScreen.style.display = 'block';
-};
-
-const closeModal = () => {
-    popupScreen.style.display = 'none';
-};
-
-// Close if outside click
-const clickOutside = (e) => {
-    if(e.target === popupScreen) {
-    popupScreen.style.display = 'none';
-    }
-};
-
-bookNow.addEventListener('click', openModal);
-closePopup.addEventListener('click', closeModal);
-// Listen outsideclick
-window.addEventListener('click', clickOutside);
-
-
-
+const openAgenda = () => {
+    window.open(
+    'https://www.supersaas.nl/schedule/Thomashoenselaars/MOW_Studio?m=1',
+    '_blank'
+)};
+bookNow.addEventListener('click', openAgenda);
