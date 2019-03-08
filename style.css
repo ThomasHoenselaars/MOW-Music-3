@@ -93,7 +93,7 @@ ul {
 }
 
 .mobile-hamburger {
-    padding: 1rem;
+    padding: .5rem;
     cursor: pointer;
     display: inline-block;
 }
@@ -183,6 +183,8 @@ ul {
     background: rgba(89, 125, 136, 0.8);
 }
 
+
+
 /* SECTION CONTENT IN EEN GRID */
 .fp-tableCell {
     display: grid;
@@ -199,8 +201,22 @@ ul {
     flex-flow: column;
     justify-content: center;
     align-items: center;
+    height: 80%;
+    text-align: center;
+}
+
+.section-title {
+    color: white;
+    
 }
 /* EINDE SECTION CONTENT LAYOUT */
+
+iframe {
+    margin-bottom: 2rem;
+    max-width: 100%;
+}
+
+
 
 .spotify-btn {
     font-size: 14px;
@@ -214,6 +230,7 @@ ul {
     white-space: normal;
     color: #fff;
     background-color: #1db954;
+    
 }
 
 
@@ -225,7 +242,7 @@ ul {
     box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
     border-radius: 2px;
     grid-column: 2;
-    justify-items: center !important;
+    justify-items: center;
 }
 
 .card p {
