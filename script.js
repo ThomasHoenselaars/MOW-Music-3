@@ -8,7 +8,8 @@ const fullPage = new fullpage('#fullpage', {
     navigation: true,
     navigationTooltips: ['Home', 'About', 'Music', 'Book A Studio', 'Contact'],
     controlArrows: true,
-    responsiveWidth: 900
+    responsiveWidth: 900,
+    scrollOverflow:true
     
 });
 
