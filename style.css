@@ -51,10 +51,10 @@ ul {
 
 #menu li.active {
     color: white;
-    background: rgba(139, 139, 139, 0.6);
+    background: rgba(139, 139, 139, 0.9);
 }
 #menu li.active:hover {
-    background: rgba(139, 139, 139, 0.9);
+    background: rgba(139, 139, 139, 0.6);
 }
 #menu li {
     
@@ -266,9 +266,9 @@ iframe {
 .booknow {
     font-size: 150%;
     padding: 1rem 5rem;
-    border: 2px solid white;
+    border: 1px solid #616467;
     border-radius: 6px;
-    background: rgba(139, 139, 139, 0.6);
+    background: #222326;
     color: white;
     font-weight: 100;
     box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
@@ -327,9 +327,9 @@ iframe {
     .card {
         margin: 5rem 0;
     }
-    /* .section-content {
+    .section-content {
         margin-top: 3rem;
-    } */
+    }
     .fp-table {
         min-height: 100vh !important;
     }
