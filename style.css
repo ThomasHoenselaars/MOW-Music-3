@@ -25,6 +25,10 @@ ul {
     margin: 0;
 }
 
+.carousel-cell {
+    width: 100%; /* full width */
+  }
+
 .navbar {
     position: fixed;
     top: 0;

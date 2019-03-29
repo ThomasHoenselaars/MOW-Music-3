@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+</head>
+<body>
+
+    <style>
+        img {
+            max-width: 100%;
+        }
+        </style>
+        <div class="main-carousel">
+                <div class="carousel-cell">
+                    <img src="images/Studio MOW-0408-min-min.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/Studio MOW-0560-min.jpg" alt="">
+                </div>
+                <div class="carousel-cell">
+                    <img src="images/Studio MOW-0482.jpg" alt="">
+                </div>
+            </div>
+
+            <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+            <script>
+                var elem = document.querySelector('.main-carousel');
+                var flkty = new Flickity( elem, {
+                // options
+                cellAlign: 'left',
+                contain: true,
+                pageDots: false,
+                imagesLoaded: true
+                });
+            </script>
+        
+</body>
+</html>
