@@ -54,10 +54,10 @@ mobileMenu.addEventListener('click', (e) => {
 // // Listen outsideclick
 // window.addEventListener('click', clickOutside);
 
-const bookNow = document.querySelector('.booknow');
-const openAgenda = () => {
-    window.open(
-    'https://www.supersaas.nl/schedule/Thomashoenselaars/MOW_Studio?m=1',
-    '_blank'
-)};
-bookNow.addEventListener('click', openAgenda);
+// const bookNow = document.querySelector('.booknow');
+// const openAgenda = () => {
+//     window.open(
+//     'https://www.supersaas.nl/schedule/Thomashoenselaars/MOW_Studio?m=1',
+//     '_blank'
+// )};
+// bookNow.addEventListener('click', openAgenda);

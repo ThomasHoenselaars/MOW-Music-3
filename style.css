@@ -177,7 +177,10 @@ ul {
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(206, 206, 206, 0.5);  }
+    background: rgba(206, 206, 206, 0.5);  
+}
+
+
 
 
 
@@ -243,11 +246,12 @@ ul {
     color: white;
     
 }
+
 /* EINDE SECTION CONTENT LAYOUT */
 
 iframe {
-    margin-bottom: 2rem;
-    max-width: 100%;
+    /* margin-bottom: 2rem; */
+    width: 100%;
     max-height: 100%;
 }
 
@@ -273,16 +277,38 @@ iframe {
 
 .card {
     background-color: white;
-    width: 25rem;
+    max-width: 60rem;
     padding: 2rem;
     box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
     border-radius: 2px;
     grid-column: 2;
     justify-items: center;
+    display: flex;
+    
 }
 
 .card p {
     padding: .5rem 0 1rem 0;
+    text-align: left;
+}
+
+.card h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+p.card-text {
+    padding-right: 2rem;
+}
+
+.card-right {
+    flex: 0 1 50%;
+}
+.card-left {
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 .booknow:hover {
@@ -299,6 +325,12 @@ iframe {
     font-weight: 100;
     box-shadow: 2px 5px 45px -15px rgba(0,0,0,0.6);
     cursor: pointer;
+    margin-bottom: 1%;
+
+}
+
+.card-bottom {
+    margin-bottom: 5%;
 }
 
 .socialmedia-nav {
@@ -416,7 +448,18 @@ iframe {
     .card {
         margin: 5rem 0;
         width: 100vw;
+       display: block;
     }
+
+    .card p, .card h2 {
+        text-align: center;
+
+    }
+
+    .card-left {
+        margin-bottom: 1rem;
+    }
+
     .section-content {
         margin-top: 3rem;
         margin-bottom: 0rem;
