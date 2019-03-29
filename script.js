@@ -61,3 +61,12 @@ mobileMenu.addEventListener('click', (e) => {
 //     '_blank'
 // )};
 // bookNow.addEventListener('click', openAgenda);
+
+
+var elem = document.querySelector('.main-carousel');
+var flkty = new Flickity( elem, {
+  // options
+  cellAlign: 'left',
+  contain: true,
+  pageDots: false,
+});

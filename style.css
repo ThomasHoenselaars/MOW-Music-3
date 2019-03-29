@@ -333,6 +333,7 @@ p.card-text {
     margin-bottom: 5%;
 }
 
+
 .socialmedia-nav {
     display: flex;
     justify-content: center;
@@ -448,7 +449,7 @@ p.card-text {
     .card {
         margin: 5rem 0;
         width: 100vw;
-       display: block;
+        display: block;
     }
 
     .card p, .card h2 {
