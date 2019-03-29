@@ -458,7 +458,10 @@ p.card-text {
 
     .card p, .card h2 {
         text-align: center;
+    }
 
+    p.card-text {
+        padding-right: 0;
     }
 
     .card-left {
